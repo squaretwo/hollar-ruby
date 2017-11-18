@@ -1,0 +1,5 @@
+require 'json'
+require 'rest_client'
+require 'hollar'
+require 'hollar/errors/authentication_error'
+require 'test_content'

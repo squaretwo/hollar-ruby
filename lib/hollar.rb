@@ -1,5 +1,6 @@
 require 'json'
 require 'rest_client'
+require 'hollar/order'
 require 'hollar/errors/authentication_error'
 
 module Hollar
@@ -37,6 +38,7 @@ module Hollar
     else
       opts.merge!(:payload => params.to_json)
     end
+
     response = execute_request(opts)
     return JSON.parse(response)
   end
