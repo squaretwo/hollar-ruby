@@ -1,5 +1,5 @@
 spec = Gem::Specification.new do |s|
-  s.name = 'hollar-ruby'
+  s.name = 'hollar'
   s.version = '0.0.1'
   s.summary = 'Ruby bindings for the Hollar API (https://hollarfulfillment.docs.apiary.io)'
   s.description = s.summary

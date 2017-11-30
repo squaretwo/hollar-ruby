@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hollar-ruby (0.0.1)
+    hollar (0.0.1)
       rest-client (~> 2.0.2)
 
 GEM
@@ -37,7 +37,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  hollar-ruby!
+  hollar!
   rake
   rspec
 
