@@ -15,9 +15,8 @@ describe Hollar do
       params = {"foo" => "bar"}
       opts = {
           :method => :get,
-          :token => @token,
           :url => Hollar.base_url + '/example',
-          :headers => {params: params}
+          :headers => {params: params, "x-spree-token": @token}
       }
 
       RestClient::Request.should_receive(:execute).with(opts).and_return(test_order_status_response.to_json)
@@ -40,8 +39,8 @@ describe Hollar do
       params = {"foo" => "bar"}
       opts = {
           :method => :post,
-          :token => @token,
           :url => Hollar.base_url + '/example',
+          :headers => {"x-spree-token": @token},
           :payload => params.to_json
       }
 

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hollar (0.0.1)
+    hollar (0.0.2)
       rest-client (~> 2.0.2)
 
 GEM
