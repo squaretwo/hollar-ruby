@@ -40,7 +40,7 @@ describe Hollar do
       opts = {
           :method => :post,
           :url => Hollar.base_url + '/example',
-          :headers => {"x-spree-token": @token},
+          :headers => {"x-spree-token": @token, :content_type => :json},
           :payload => params.to_json
       }
 

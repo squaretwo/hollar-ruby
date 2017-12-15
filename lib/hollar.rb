@@ -35,7 +35,7 @@ module Hollar
     if method == :get
       opts.merge!({headers: {params: params, "x-spree-token": api_token}})
     else
-      opts.merge!(:payload => params.to_json, :headers => {"x-spree-token": api_token})
+      opts.merge!(:payload => params.to_json, :headers => {"x-spree-token": api_token, :content_type => :json})
     end
 
     response = execute_request(opts)
